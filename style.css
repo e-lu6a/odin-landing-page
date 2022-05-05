@@ -2,7 +2,7 @@
 open issues
 - how to make sign up button not full width
 - size image dynamically according to text & button height?
-- fix button color styling
+- fix button color styling design
 */
 
 
@@ -20,6 +20,17 @@ button {
     font-weight: bold;
     color: #DA4167;
     background-color: #FCB97D;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #083d77;
+}
+
+a:hover {
+    color: #DA4167;
 }
 
 .header, .section-1, .section-2, .section-3, .section-4, .footer {
@@ -29,6 +40,7 @@ button {
     padding-left: 20%;
 }
 
+/* header */ 
 .header {
     background-color: #d9cce6;
     display: flex;
@@ -44,15 +56,6 @@ ul {
 
 li {
     list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #083d77;
-}
-
-a:hover {
-    color: #DA4167;
 }
 
 .logo {
@@ -94,7 +97,7 @@ a:hover {
     object-fit: contain;
 }
 
-/* section 2 items */
+/* section 2 */
 .section-2 {
     background-color: white;
     text-align: center;
@@ -150,11 +153,58 @@ a:hover {
     background-color: #e5e7eb;
 }
 
-.section-4 {
-    background-color: white;
+.quote {
+    font-size: 36px;
+    font-style: italic;
 
+    /* TODO: unsure why font-weight is not displaying light correctly */
+    font-weight: 100;
 }
 
+.attribution {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* section 4 */
+.section-4 {
+    background-color: white;
+}
+
+.CTA-box {
+    background-color: #ccebe8;
+    border-radius: 3px;
+    padding: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.section-4 h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section-4 p {
+    margin: 0;
+}
+
+/* footer */
 .footer {
     background-color: #1F2937;
+    color: #e5e7eb;
+}
+
+.footer p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.footer a {
+    color: #FCB97D;
 }
