@@ -1,8 +1,6 @@
 /* 
 open issues
-- how to make sign up button not full width
 - size image dynamically according to text & button height?
-- fix button color styling design
 */
 
 
@@ -19,9 +17,18 @@ button {
     border-radius: 3px;
     font-weight: bold;
     color: #DA4167;
-    background-color: #FCB97D;
+    background-color: #ffdcbd;
     flex-grow: 0;
     flex-shrink: 0;
+}
+
+button:hover, :focus {
+    background-color: #FCB97D;
+}
+
+button:active {
+    background-color: #DA4167;
+    color: #ffdcbd;
 }
 
 a {
@@ -81,6 +88,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .hero-text {
@@ -95,6 +103,10 @@ li {
 .section-1 img {
     max-height: 250px;
     object-fit: contain;
+}
+
+.section-1 button {
+    align-self: flex-start;
 }
 
 /* section 2 */
