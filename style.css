@@ -1,0 +1,160 @@
+/* 
+open issues
+- how to make sign up button not full width
+- size image dynamically according to text & button height?
+- fix button color styling
+*/
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+button {
+    padding: 8px 30px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #DA4167;
+    background-color: #FCB97D;
+}
+
+.header, .section-1, .section-2, .section-3, .section-4, .footer {
+   padding-top: 50px;
+    padding-right: 20%;
+    padding-bottom: 50px;
+    padding-left: 20%;
+}
+
+.header {
+    background-color: #d9cce6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #083d77;
+}
+
+a:hover {
+    color: #DA4167;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #083d77;
+}
+
+/* section 1 */
+.section-1 {
+    background-color: #d9cce6;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+    padding-top: 30px;
+    padding-bottom: 80px;
+
+    color: white;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #DA4167;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.section-1 img {
+    max-height: 250px;
+    object-fit: contain;
+}
+
+/* section 2 items */
+.section-2 {
+    background-color: white;
+    text-align: center;
+    color: darkgray;
+    padding-bottom: 50px;
+}
+
+.section-2 h2 {
+    color: #FCB97D;
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.image-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.image1, .image2, .image3, .image4 {
+    height: 180px;
+    width: 180px;
+    border-radius: 10px;
+}
+
+.image-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 180px;
+    gap: 15px;
+}
+.image1 {
+    background-color: #d9cce6;
+}
+
+.image2 {
+    background-color: #FCB97D;
+}
+
+.image3 {
+    background-color: #DA4167;
+}
+
+.image4 {
+    background-color: #545677;
+}
+
+/* section 3 */
+.section-3 {
+    background-color: #e5e7eb;
+}
+
+.section-4 {
+    background-color: white;
+
+}
+
+.footer {
+    background-color: #1F2937;
+}
